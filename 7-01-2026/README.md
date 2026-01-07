@@ -8,7 +8,7 @@ This project implements a Retrieval-Augmented Generation (RAG) backen using:
 - Chunking-based ingestion for large documents
 
 
-## Features
+# Features
 
 - Store single texts as vector embeddings
 - Store large documents using chunking
