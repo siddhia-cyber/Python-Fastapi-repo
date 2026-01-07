@@ -20,9 +20,14 @@ if not QDRANT_URL or not QDRANT_API_KEY:
     raise RuntimeError("QDRANT_URL or QDRANT_API_KEY not set in .env")
 
 COLLECTION = "docs"
+EMBED_URL = os.getenv("EMBED_URL")
+MODEL = os.getenv("EMBED_MODEL")
+if not EMBED_URL or not MODEL:
+    raise RuntimeError("EMBED_URL or EMBED_MODEL not set in .env")
 
-EMBED_URL = "http://localhost:11434/api/embeddings"
-MODEL = "nomic-embed-text"
+
+# EMBED_URL = "http://localhost:11434/api/embeddings"
+# MODEL = "nomic-embed-text"
 
 app = FastAPI()
 
