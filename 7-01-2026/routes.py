@@ -9,6 +9,9 @@ from chunking import chunk_text
 from database import client
 from config import COLLECTION, QDRANT_URL, QDRANT_API_KEY
 
+
+from models import EmbedPreviewRequest
+
 router = APIRouter()
 
 @router.post("/create")
@@ -77,3 +80,14 @@ def read(data: ReadRequest):
     results = [h["payload"]["text"] for h in hits if "text" in h.get("payload", {})]
 
     return {"query": data.query, "results": results}
+
+
+@router.post("/embed_preview")
+def embed_preview(data: EmbedPreviewRequest):
+    vector = embed(data.text)
+
+    return {
+        "text": data.text,
+        "vector_length": len(vector),
+        "vector_preview": vector[:data.preview_size]
+    }

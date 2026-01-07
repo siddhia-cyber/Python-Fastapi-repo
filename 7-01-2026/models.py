@@ -11,3 +11,7 @@ class CreateChunksRequest(BaseModel):
 class ReadRequest(BaseModel):
     query: str
     top_k: int = 3
+
+class EmbedPreviewRequest(BaseModel):
+    text: str
+    preview_size: int = 10
