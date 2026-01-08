@@ -1,8 +1,0 @@
-Artificial Intelligence is transforming modern industries. 
-Machine learning algorithms enable systems to learn patterns from data.
-Deep learning models such as neural networks are widely used in image and speech recognition.
-AI applications include healthcare diagnosis, autonomous vehicles, and recommendation systems.
-Information Retrieval focuses on searching and ranking relevant documents.
-Search engines use indexing techniques to efficiently retrieve data.
-Vector space models and term frequency are commonly used methods.
-Relevance scoring helps rank documents based on user queries.
