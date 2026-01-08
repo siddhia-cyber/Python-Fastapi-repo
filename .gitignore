@@ -1,34 +1,12 @@
-# Virtual environments
-venv/
-env/
-.venv/
-
-# VS Code
-.vscode/
-
-
-# Databases
-*.db
-*.sqlite3
-
-
-# Virtual environments (ANYWHERE in repo)
-venv/
+# Virtual environment
 venv312/
-*/venv/
-*/venv312/
 
 # Python cache
 __pycache__/
 .pytest_cache/
-*.pyc
 
-# Environment variables / secrets
+# Environment variables
 .env
-*/.env
 
-# OS / editor junk
-.DS_Store
-Thumbs.db
-.vscode/
-
+# Excel temp files
+~$*.xlsx
